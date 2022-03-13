@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/table.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>装备质量安全分析</title>
+</head>
+<body>
+
+    <div class="info_soft clearfix">
+        <span>装备质量安全分析</span>
+    </div>
+    <div class="nav clearfix">
+        <div class="nav_div"><span>系统管理</span></div>
+        <div class="nav_div"><span>分析显示</span></div>
+        <div class="nav_div"><span>报表</span></div>
+        <div class="nav_div"><span>查询</span></div>
+        <div class="nav_div"><span>版本管理</span></div>
+        <div class="nav_div"><span>参数设置</span></div>
+        <div class="nav_div"><span>界面设置</span></div>
+        <div class=" nav_div"><span>帮助</span></div>
+      </div>
+    <div class="middle">
+          <div class="middle_div"> <span>刷新</span></div>
+          <div class="middle_div"> <span>全程记录</span></div>
+          <div class="middle_div"> <span>运行曲线</span></div>
+          <div class="middle_div"> <span>语音报活</span></div>
+          <div class="middle_div"> <span>安全因素</span></div>
+          <div class="middle_div"> <span>重点作业跟踪</span></div>
+
+      </div>
+      <div class="table-box" id="table_box">
+        <table cellpadding="0" cellspacing="0">
+          <thead>
+            <tr>
+              <th style="width: 60px;">序号</th>
+              <th >开车日期</th>
+              <th>车次</th>
+              <th>车型</th>
+              <th>机车号</th>
+              <th>数据交路</th>
+              <th>司机名</th>
+              <th>副司机名</th>
+              <th >整备点</th>
+              <th>文件状态</th>
+              <th >版本对比</th>
+              <th>原分数</th>
+              <th >分析状态</th>  
+               <th >分析人</th>
+            </tr>
+          </thead>
+  
+          <tbody id = "tbody">
+              <tr class= "tr_show">
+              <td style="background-color: #e1e1e1;width: 60px;border: 1px solid white">1</td>
+              <td >广州</td>
+              <td >2022/3/12</td>
+              <td>8018</td>
+              <td>DF</td>
+              <td>8011</td>
+              <td>234</td>
+              <td>443</td>
+              <td> </td>
+              <td  >3232</td>
+              <td>
+                100
+                </td>
+              <td>2022/3/12</td>
+              <td>2022/3/12</td>
+              <td>2022/3/12</td>
+            </tr>
+          </tbody>
+          
+        </table>
+        
+      </div>
+    <div class="result clearfix">
+        <span class="result-span">
+
+        </span>
+        <div class="result_left clearfix">
+            <div style="width: 100%; height: 30px; margin-top: 20px;">
+                <span class="result_left_span ">司机</span>
+                <span class="result_left_span">车次</span>
+                <span class="result_left_span">机车</span>
+                <span class="result_left_span">分段</span>
+            </div>
+        </div>
+        <div class="result_middle ">
+            <div class="clearfixs" style ="width: 100%;height: 30px; ">
+                <span class="result_middle_span clearfix">作业质量</span>
+                <span class="result_middle_span clearfix">作业标化</span>
+                <span class="result_middle_span clearfix">综合信息</span>
+                <span class="result_middle_span clearfix">违章项点</span>
+            </div>
+        <div class="result_middle_div">
+            <span class="result_middle_xiangdian"><b>项点说明</b></span>
+        </div>
+        <div class="result_middle_table">
+            <table cellpadding="0" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th >项点编码</th>
+                    <th >违章次数</th>
+                    <th>总体情况</th>
+                    <th>重要程度</th>
+                    <th>分数</th>
+                    <th>定责标志</th>
+                    <th>责任标志</th>
+                    <th>责任意见</th>
+                    <th >分析标志</th>
+                  </tr>
+                </thead>
+                <tbody >
+                    <tr >
+                    <td>20.取把过充消除时间</td>
+                    <td >1</td>
+                    <td >违章</td>
+                    <td>B类</td>
+                    <td>6</td>
+                    <td>未改</td>
+                    <td>责任</td>
+                    <td></td>
+                    <td>未分析 </td>
+                  
+                  </tr>
+                </tbody>
+                
+                </table>
+        </div>
+        </div>
+       
+        <div class="result_right">
+            <div class="fenxi_suggest">
+                <span class="fenxi_span">分析意见</span>
+            </div>
+            <div style="width: 40%; float: left;margin: 10px; font-size: 25px;">
+                <span style="display:  block; margin-top: 10px;">分析结果  </span>
+                <select style="display: block;width: 100px; margin-top: 10px;">
+                    <option value ="volvo">Volvo</option>
+                    <option value ="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                  <span style="display: block;  margin-top: 10px;">修改分析</span>
+                  
+            </div>
+            <span class="confirm_fenxi">分析确认</span>
+      
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    var height = window.screen.availHeight
+    var tbody = document.getElementById('table_box')
+    tbody.style.height = height - 500 + 'px'
+</script>
+</html>

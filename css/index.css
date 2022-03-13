@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+.nav{
+    display:  block;
+    height: 50px;
+    width: 100%;
+    background-color: #eeeeee;
+}
+.nav span{
+    display: block;
+    height: 30px;
+    border-right: 1px;
+    font-size: 20px;
+    line-height: 50px;
+    width: 100%;
+}
+
+.info_soft {
+    width: 100%;
+    /* background-color: #e1e1e1; */
+    background: linear-gradient(to top left,rgb(156, 190, 247),rgb(116, 139, 173));
+    height: 50px;
+    font-size: 20px;
+  }
+  .info_soft span {
+    display: block;
+    float: left;
+    /* height: 30px; */
+    /* width: 150px; */
+    /* border-right: 1px solid #38f; */
+    /* background-color: #e1e1e1; */
+    /* border: 1px solid #e1e1e1; */
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 50px;
+    margin-left: 30px;
+    padding-right: 10px;
+    text-align: center;
+  }
+  .nav_div {
+    float: left;
+    height: 30px;
+    border-right: 1px;
+    font-size: 30px;
+    line-height: 30px;
+    height: 30px;
+    width: 150px;
+
+    /* border: 1px solid #C3C3C3; */
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 30px;
+    padding-right: 10px;
+    text-align: center;
+  }
+  .middle{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(223, 231, 241);
+  }
+  .middle_div {
+    float: left;
+    height: 30px;
+    border-right: 1px;
+    height: 40px;
+    width: 150px;
+    background-color: rgb(202, 220, 234);
+    border: 1px solid rgb(175, 207, 227);
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 40px;
+    padding-right: 10px;
+    text-align: center;
+  }
+  .table-box {
+    margin-top: 0px;
+    width: 100%;
+    border: 1px solid rgb(0, 80, 150);
+  }
+  
+  /* 滚动条宽度 */
+  ::-webkit-scrollbar {
+    width: 15px;
+    background-color: transparent;
+  }
+  
+  /* 滚动条颜色 */
+  ::-webkit-scrollbar-thumb {
+    background-color: #27314d;
+  }
+  
+  table {
+    float: left;
+    /* width:  calc(100% - 15px); */
+    border-spacing: 0px;
+    border-collapse: collapse;
+    margin-right: 0px;
+  }
+  
+  table caption {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 50px;
+  }
+  
+  table th,
+  table td {
+    height: 30px;
+    text-align: center;
+    border: 1px solid  #e1e1e1;
+  }
+  table th{
+    /*border: 1px solid  transparent;*/
+  }
+  
+  table thead {
+    color: #575757;
+    background-color: #e0e2df;
+  }
+  
+  tbody {
+    display: block;
+    /* width: calc(100% + 15px); /*这里的8px是 这里的8px是滚动条的宽度 */
+    /* height: calc(100% - 100px); */
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 14px;
+  }
+  
+  table thead tr,
+  table tbody tr,
+  table tfoot tr {
+    box-sizing: border-box;
+    table-layout: fixed;
+    display: table;
+    width: 100%;
+  }
+  
+  table tbody tr {
+    background: #fefefe;
+  }
+  
+  table tbody tr td {
+    border-bottom: none;
+  }
+  table tbody tr:last-child td {
+    border-bottom: 1px solid  #e1e1e1;
+  }
+  .result{
+    width: 100%;
+    height: 200px;
+  }
+  .result-span{
+    display: block;
+    height: 20px;
+  }
+  .result_left,
+  .result_right,
+  .result_middle{
+    float: left;
+    border: 1px solid  red;
+    
+    height: 300px;
+  }
+  .result_left{
+  
+    width: 25%;
+  }
+  .result_right{
+    width:25%
+  }
+  .result_middle{
+    width: calc(50% - 6px);
+  }
+  .result_left_span,
+  .result_middle_span{
+  
+    display: block;
+    float: left;
+    line-height: 30px;
+    font-size: 20px;
+    border: 1px solid  rgb(194, 211, 255);
+    text-align: center;
+    background-color: rgb(232, 237, 244);
+    box-shadow: 0px 1px 3px rgba(34, 25, 25, 0.2)
+  }
+  .result_left_span{
+    width: calc(25% - 2px);
+  }
+  .result_middle_span{
+      width: calc(18% - 2px);
+  }
+  .result_middle_div{
+    margin-top: 2px;
+    height: 30px;
+    width: 100%;
+    background-color: rgb(232, 237, 244);
+    box-shadow: 0px 1px 3px rgba(34, 25, 25, 0.2);
+    border: 1px solid  rgb(194, 211, 255);
+    line-height: 30px;
+    /* background-color: rgb (222, 235, 245); */
+}
+.result_middle_table{
+    height: 230px;
+    width: 100%;
+}
+.fenxi_suggest{
+    margin-left: 3px;
+    margin-right: 3px;
+    width: calc(100%-6px);
+    height: 50%;
+    border: 1px solid  rgb(194, 211, 255);
+    box-shadow: 0px 1px 3px rgba(34, 25, 25, 0.2);
+}
+.fenxi_span{
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    font-size: 18px;
+    height: 30px;
+    border: 1px solid  rgb(194, 211, 255);
+    background-color: rgb(205, 210, 218);
+}
+.confirm_fenxi{
+    display: block;
+    width: 100px;
+    float: left;
+    font-size: 25px;
+    height: 50px;
+    border: 1px solid  rgb(0, 0, 0);
+    line-height: 50px;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0px 1px 3px rgba(34, 25, 25, 0.2);
+}
